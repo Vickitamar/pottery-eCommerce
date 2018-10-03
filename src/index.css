@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cutive Mono', monospace;
+}
+
+.list-group {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	padding: 0px 160px;
+	list-style-type: none;
+    margin: 70px 0 0 70px;
+    padding: 0;
+}
+
+.link-list-item {
+	height: 550px;
+	width: 450px;
+	margin-bottom: 50px;
+}
+
+/* eat detail incl slider */
+
+.eatItem_detail, .drinkItem_detail, .decorateItem_detail {
+	display: grid;
+	grid-template-columns: 60% 40%;
+	grid-template-rows: 3fr 3fr 1fr 1fr 1fr;
+}
+
+.eatItem_detail img, .drinkItem_detail img, .decorateItem_detail img {
+	grid-area: 1/1/6/2;
+}
+
+.title_eat_detail, .title_drink_detail, .title_decorate_detail {
+	grid-area: 1/2/2/3;
+	border-top: 1px solid black;
+}
+
+.price_eat_detail, .price_drink_detail, .price_decorate_detail {
+	grid-area: 1/2/2/3;
+	margin-top: 40px;
+}
+
+.description_eat_detail, .description_drink_detail, .description_decorate_detail {
+	grid-area: 2/2/3/3;
+	border-top: 1px solid black;
+}
+
+.color_eat_detail, .color_drink_detail, .color_decorate_detail {
+	grid-area: 3/2/4/3;
+	border-top: 1px solid black;
+}
+
+.size_eat_detail, .size_drink_detail, .size_decorate_detail {
+	grid-area: 4/2/5/3;
+	border-top: 1px solid black;
+}
+
+.eatItem_detail button, .drinkItem_detail button, .decorateItem_detail button {
+	grid-area: 5/2/6/3;
+}
+
+select {
+	float: right;
+	width: 20%;
+}
+
+/* search filters */
+.searchOptions {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	margin-right: 10px;
+}
+
+/* basket display page */
+
+.basketContainer {
+	display: flex;
+	flex-direction: column;
+}
+
+.basketHeading {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 50px;
+}
+
+.basketItem {
+	margin-bottom: 20px;
+	list-style-type: none;
+	display: grid;
+	grid-template-columns: 3fr 1fr 1fr 1fr;
+	grid-column-gap: 10px;
+	height: 200px;
+	background-color: #eaeaea;
+	padding-right: 10px;
+}
+
+.basketItem h3 {
+	padding-left: 20px;
+}
+
+.basketItem button {
+	height: 75px;
+	width: 200px;
+	margin-top: 50px;
+	background-color: #ffffff;
+	border-color: #ffffff;
+}
+
+.basketOutput {
+	display: flex;
+	justify-content: center;
+}
+
+.checkout {
+	background-color: black;
+	color: white;
+}
+
+.shopping {
+	background-color: white;
+	color: black;
+	border-color: grey;
+}
+
+
+
+
+
+
+
+
+
+
+
+
